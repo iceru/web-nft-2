@@ -382,4 +382,19 @@
             }
         }
     }
+    
+
+    @include breakpoint(mobileonly) {
+        h1 {
+            font-size: 2.75rem;
+        }
+
+        .socials {
+            .item {
+                img {
+                    max-width: 70px;
+                }
+            }
+        }
+    }
 }
