@@ -1,0 +1,385 @@
+.hero {
+    background-image: url('../images/hero-bg.JPG');
+    background-size: cover;
+    background-position: bottom;
+
+    .navbar {
+        .menu {
+            font-family: 'Raleway';
+            color: white;
+            ul {
+                list-style-type: none;
+                display: flex;
+                padding: 0;
+    
+                li {
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+
+    .hero-content {
+        min-height: 90vh;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        padding: 4rem 0;
+        
+        .title {
+            text-align: center;
+            img {
+                width: 70%;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    @include breakpoint(mobileonly) {
+        .hero-content {
+            min-height: 40vh;
+            .title {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .navbar {
+            .menu {
+                display: none;
+            }
+        }
+
+        .hamburger {
+            display: block;
+            padding: .5rem;
+
+            img {
+                width: 40px;
+                filter: invert(1);
+            }
+        }
+    }
+}
+
+.offcanvas {
+    max-width: 80%;
+
+    .offcanvas-header {
+        justify-content: end;
+    }
+
+    .offcanvas-body {
+        padding-left: 2rem;
+        .menu {
+            font-family: 'Raleway';
+    
+            ul {
+                list-style-type: none;
+                padding: 0;
+    
+                li {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.friendship {
+    background-image: url('../images/friendship-bg.png');
+    padding: 4rem 0;
+    background-size: contain;
+
+    .friendship-title {
+        text-align: center;
+        margin-bottom: 2rem;
+        img {
+            width: 60%;
+        }
+    }
+
+    .friendship-desc {
+        font-family: 'Fluffy Gichi', sans-serif;
+        color: black;
+        font-size: 2.2rem;
+        line-height: 2rem;
+
+        span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1.5rem;
+        }
+    }
+}
+
+.adventure {
+    background-image: url('../images/adventure-bg.png');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0; 
+
+    .adventure-title {
+        text-align: center;
+        img {
+            width: 90%;
+        }
+    }
+
+    @include breakpoint(mobileonly) {
+        padding: 7rem 0;
+        .adventure-title {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .adv-img {
+        img {
+            margin-bottom: 1rem;
+            padding: .5rem;
+            background-color: white;
+        }
+    }
+}
+
+.love {
+    background-image: url('../images/love-bg.png');
+    background-size: cover;
+    background-position: bottom;
+    padding: 2rem 0 7rem; 
+
+    .title {
+        margin-bottom: 1rem;
+        text-align: center;
+
+        img {
+            width: 80%;
+        }
+    }
+
+    @include breakpoint(mobileonly) {
+        .title {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.about {
+    background-image: url('../images/bio-bg.png');
+    background-size: cover;
+    background-position: bottom;
+    padding: 4rem 0; 
+
+    .about-text {
+        font-family: 'Hey Haters';
+        color: white;
+        text-align: center;
+        font-size: 1.95rem;
+        line-height: 1.95rem; 
+    }
+}
+
+.rare {
+    background-image: url('../images/rare-bg.JPG');
+    background-size: cover;
+    background-position: bottom;
+    padding: 4rem 0;
+
+    .rare-text {
+        padding-right: 8rem;
+    }
+    h1 {
+        color: white;
+        font-family: 'Rubik One', sans-serif;
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        padding: 0.75rem 2rem;
+    }
+
+    .desc {
+        color: white;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .rare-images {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: rgba($color: #000000, $alpha: 0.3);
+    }
+
+    .rare-3 {
+        width: 63.666667%;
+    }
+
+    .rare-4 {
+        width: 35.333333%;
+    }
+
+    @include breakpoint(mobileonly) {
+        .rare-text {
+            padding-right: 1rem;
+            text-align: center;
+        }
+
+        .button {
+            margin-bottom: 2rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
+
+.roadmap {
+    background-image: url('../images/roadmap-bg.png');
+    background-size: cover;
+    background-position: left;
+    padding: 2rem 0;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 90vh;
+    }
+
+
+    .subtitle {
+        h3 {
+            color: #c71e25;
+            font-family: 'Fluffy Gichi', sans-serif;
+            margin-bottom: .5rem;
+            font-size: 3.5rem;
+            line-height: 2.5rem;
+            display: inline-block;
+        }
+    }
+
+    p {
+        color: #ee5c29;
+        font-family: 'Fluffy Gichi', sans-serif;
+        font-size: 2rem;
+        line-height: 1.75rem;
+        margin-bottom: 3rem;
+
+        span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1.5rem;
+        }
+    }
+
+    .title {
+        text-align: center;
+        img {
+            width: 90%;
+        }
+    }
+
+    @include breakpoint(laptop) {
+        .first {
+            padding-left: 3rem;
+        }
+
+        .second {
+            margin-top: 5rem;
+        }
+
+        .fourth {
+            margin-top: 5rem;
+            padding-left: 4rem;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .subtitle {
+            h3 {
+                padding-left: 2rem;
+            }
+        }
+
+        .title {
+            img {
+                width: 50%;
+            }
+        }
+    }
+}
+
+.footer {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .bg-desktop {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        @include breakpoint(mobileonly) {
+            img {
+                object-position: right;
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+    }
+
+    h1 {
+        font-family: 'Hey Haters', sans-serif;
+        color: white;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        color: #FEDA00;
+        text-align: center;
+    }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+
+        .button {
+            padding: 1rem 4rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+        .item {
+            margin: 1rem;
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+}

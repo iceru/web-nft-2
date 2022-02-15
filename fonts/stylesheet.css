@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Whiskey Town';
+    src: url('WhiskeyTown-Sober.eot');
+    src: url('WhiskeyTown-Sober.eot?#iefix') format('embedded-opentype'),
+        url('WhiskeyTown-Sober.woff2') format('woff2'),
+        url('WhiskeyTown-Sober.woff') format('woff'),
+        url('WhiskeyTown-Sober.ttf') format('truetype'),
+        url('WhiskeyTown-Sober.svg#WhiskeyTown-Sober') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hey Haters';
+    src: url('HeyHaters.eot');
+    src: url('HeyHaters.eot?#iefix') format('embedded-opentype'),
+        url('HeyHaters.woff2') format('woff2'),
+        url('HeyHaters.woff') format('woff'),
+        url('HeyHaters.ttf') format('truetype'),
+        url('HeyHaters.svg#HeyHaters') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik One';
+    src: url('RubikOne-Regular.eot');
+    src: url('RubikOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RubikOne-Regular.woff2') format('woff2'),
+        url('RubikOne-Regular.woff') format('woff'),
+        url('RubikOne-Regular.ttf') format('truetype'),
+        url('RubikOne-Regular.svg#RubikOne-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fluffy Gichi';
+    src: url('FluffyGichi-Regular.eot');
+    src: url('FluffyGichi-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FluffyGichi-Regular.woff2') format('woff2'),
+        url('FluffyGichi-Regular.woff') format('woff'),
+        url('FluffyGichi-Regular.ttf') format('truetype'),
+        url('FluffyGichi-Regular.svg#FluffyGichi-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-Medium.eot');
+    src: url('Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Raleway-Medium.woff2') format('woff2'),
+        url('Raleway-Medium.woff') format('woff'),
+        url('Raleway-Medium.ttf') format('truetype'),
+        url('Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
