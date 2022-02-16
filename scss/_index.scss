@@ -41,9 +41,10 @@
     @include breakpoint(mobileonly) {
         .hero-content {
             min-height: 40vh;
+            padding: 2rem 0;
             .title {
                 img {
-                    width: 100%;
+                    width: 90%;
                 }
             }
         }
@@ -121,7 +122,10 @@
     background-image: url('../images/adventure-bg.png');
     background-size: cover;
     background-position: center;
-    padding: 6rem 0; 
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .adventure-title {
         text-align: center;
@@ -250,25 +254,27 @@
     .desc {
         color: white;
         font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        text-align: end;
+
+        @include breakpoint(desktop) {
+            padding-left: 6rem;
+            font-size: 1.25rem;
+        }
     }
 
     .rare-images {
-        padding: 1rem;
+        padding: 1.5rem;
         margin-bottom: 1rem;
         background-color: rgba($color: #000000, $alpha: 0.3);
     }
 
-    .rare-1 {
+    .rare-1, .rare-2 {
         img {
             height: 100%;
             object-fit: cover;
         }
     }
-
-    .rare-3 {
-        width: 64%;
-    }
-
     .rare-4 {
         img {
             height: 100%;
@@ -280,6 +286,10 @@
         .rare-text {
             padding-right: 1rem;
             text-align: center;
+        }
+        
+        .rare-images {
+            padding: 1rem;
         }
 
         .button {
@@ -297,6 +307,7 @@
     background-size: cover;
     background-position: left;
     padding: 2rem 0;
+    padding-top: 4rem;
 
     .container {
         display: flex;
