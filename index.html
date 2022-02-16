@@ -14,6 +14,11 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+    <!-- AOS & Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -25,23 +30,23 @@
                     aria-controls="offcanvasExample">
                     <img src="https://img.icons8.com/ios/100/000000/menu--v1.png" />
                 </a>
-                <div class="menu">
+                <div class="menu animate__animated animate__fadeInLeft">
                     <ul>
                         <li>
                             <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="/">Story</a>
+                            <a href="#story">Story</a>
                         </li>
                         <li>
-                            <a href="/">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="/">Roadmap</a>
+                            <a href="#roadmap">Roadmap</a>
                         </li>
                     </ul>
                 </div>
-                <div class="button-wrapper">
+                <div class="button-wrapper animate__animated animate__fadeInRight">
                     <div class="button btn-primary">
                         Check on Opensea
                     </div>
@@ -61,13 +66,13 @@
                             <a href="/">Home</a>
                         </li>
                         <li>
-                            <a href="/">Story</a>
+                            <a href="#story">Story</a>
                         </li>
                         <li>
-                            <a href="/">About</a>
+                            <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="/">Roadmap</a>
+                            <a href="#roadmap">Roadmap</a>
                         </li>
                     </ul>
                 </div>
@@ -76,8 +81,8 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-12 hero-content">
-                    <div class="title">
+                <div class="col-12 hero-content" data-aos="fade-up">
+                    <div class="title animate__animated animate__fadeInUp animate__delay-1s">
                         <img src="/images/Title.png" alt="Woody & Friends">
                     </div>
                 </div>
@@ -85,9 +90,9 @@
         </div>
     </div>
 
-    <div class="friendship">
+    <div class="friendship" id="story">
         <div class="container">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-12 col-lg-6 order-2 order-lg-1">
                     <div class="friendship-image">
                         <img class="w-100" src="/images/friendship-image.png" alt="">
@@ -116,10 +121,10 @@
     <div class="adventure">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-5 adventure-title">
+                <div class="col-12 col-lg-5 adventure-title" data-aos="fade-right">
                     <img src="/images/adventure title.png" alt="">
                 </div>
-                <div class="col-12 col-lg-7">
+                <div class="col-12 col-lg-7" data-aos="fade-left">
                     <div class="row">
                         <div class="col-6 col-lg-4 adv-img">
                             <img class="w-100" src="/images/adventure-image-1.png" alt="">
@@ -156,30 +161,52 @@
 
     <div class="love">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
+            <div class="row" >
+                <div class="col-12" data-aos="fade-left">
                     <div class="title">
                         <img src="/images/love-title.png" alt="">
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-right">
                     <div class="content">
-                        <img class="w-100" src="/images/love-content.png" alt="">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mb-4">
+                                <div class="img-wrapper woody">
+                                    <img class="w-100" src="/images/love-1.jpg" alt="">
+                                </div>
+                                <div class="love-text">
+                                    Every moment has its
+                                    own unique story that
+                                    can be described
+                                    without being told
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 mb-4">
+                                <div class="img-wrapper hulk">
+                                    <img class="w-100" src="/images/love-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5 mb-4">
+                                <div class="img-wrapper hulk">
+                                    <img class="w-100" src="/images/love-3.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about"  >
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6 order-2 order-lg-1">
+            <div class="row align-items-center" >
+                <div class="col-12 col-lg-6 order-2 order-lg-1" data-aos="fade-down">
                     <div class="image-wrapper">
                         <img class="w-100" src="/images/bio-img.png" alt="">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                <div class="col-12 col-lg-6 order-1 order-lg-2" data-aos="fade-down" data-aos-delay="200">
                     <div class="about-text">
                         Yogior has been recording these
                         friendships and adventures since 2013.
@@ -196,9 +223,9 @@
 
     <div class="rare">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center"  data-aos="zoom-out">
                 <div class="col-12 col-lg-6 rare-text">
-                    <h1>Every One of Them <br> is Rare</h1>
+                    <h1>Every One <br> of Them <br> is Rare</h1>
                     <div class="button-wrapper">
                         <div class="button btn-primary">
                             Check on Opensea
@@ -208,12 +235,14 @@
                 <div class="col-12 col-lg-6">
                     <div class="rare-images">
                         <div class="row">
-                            <div class="col-4 mb-3">
+                            <div class="col-4 mb-3 rare-1">
                                 <img class="w-100" src="/images/rare-1.jpg" alt="">
                             </div>
                             <div class="col-8 mb-3">
                                 <img class="w-100" src="/images/rare-2.JPG" alt="">
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-8 rare-3">
                                 <img class="w-100" src="/images/rare-3.jpg" alt="">
                             </div>
@@ -232,45 +261,10 @@
         </div>
     </div>
 
-    <div class="roadmap">
+    <div class="roadmap" id="roadmap">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 first">
-                    <div class="subtitle">
-                        <h3>Community Forever</h3>
-                    </div>
-                    <p>We will continue to manage the communities
-                        on discord, twitter and instagram for
-                        the continuity and improvement of Woody
-                        and Friends' performance at Opensea.</p>
-                </div>
-                <div class="col-12 col-lg-4 offset-lg-2 second">
-                    <div class="subtitle">
-                        <h3>
-                            The End of the Road
-                        </h3>
-                    </div>
-                    <p>
-                        We will stop producing photos only
-                        up to <span>3000</span> photos. <br>
-                        So that rarity is maintained and
-                        lasts forever..
-                    </p>
-                </div>
-                <div class="col-12 col-lg-5 third">
-                    <div class="subtitle">
-                        <h3>
-                            Thank You Day
-                        </h3>
-                    </div>
-                    <p>
-                        We will give away <span>100</span> new photos
-                        for free to the first <span>700</span> photo
-                        owners at random. With
-                        new characters and themes.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 offset-lg-1 fourth">
+                <div class="col-12 col-lg-6 first"  data-aos="fade-right">
                     <div class="subtitle">
                         <h3>
                             Community First
@@ -283,11 +277,46 @@
                         and add characters
                     </p>
                 </div>
+                <div class="col-12 col-lg-4 offset-lg-2 second"  data-aos="fade-left">
+                    <div class="subtitle">
+                        <h3>
+                            The End of the Road
+                        </h3>
+                    </div>
+                    <p>
+                        We will stop producing photos only
+                        up to <span>3000</span> photos. <br>
+                        So that rarity is maintained and
+                        lasts forever..
+                    </p>
+                </div>
+                <div class="col-12 col-lg-5 third"  data-aos="fade-right">
+                    <div class="subtitle">
+                        <h3>
+                            Thank You Day
+                        </h3>
+                    </div>
+                    <p>
+                        We will give away <span>100</span> new photos
+                        for free to the first <span>700</span> photo
+                        owners at random. With
+                        new characters and themes.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 offset-lg-1 fourth"  data-aos="fade-left">
+                    <div class="subtitle">
+                        <h3>Community Forever</h3>
+                    </div>
+                    <p>We will continue to manage the communities
+                        on discord, twitter and instagram for
+                        the continuity and improvement of Woody
+                        and Friends' performance at Opensea.</p>
+                </div>
             </div>
 
             <div class="row">
                 <div class="col-12">
-                    <div class="title">
+                    <div class="title"  data-aos="fade-up">
                         <img src="/images/roadmap-title.png" alt="">
                     </div>
                 </div>
@@ -303,17 +332,17 @@
             <div class="row">
                 <div class="col-12 col-lg-6"></div>
                 <div class="col-12 col-lg-6">
-                    <h1>
+                    <h1 data-aos="fade-up">
                         MAKE YOURSELF
                         LIKE ON YOUR
                         OWN UNIVERSE
                     </h1>
-                    <div class="btn-wrapper">
+                    <div class="btn-wrapper" data-aos="fade-up" data-aos-delay="200">
                         <a href="#" class="button btn-primary">
                             Check on Opensea
                         </a>
                     </div>
-                    <div class="socials">
+                    <div class="socials" data-aos="fade-up" data-aos-delay="400">
                         <a href="#" class="item">
                             <img src="images/instagram.png" alt="instagram">
                         </a>
@@ -328,6 +357,10 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        AOS.init({ once: true, duration: 700 });
+    </script>
 </body>
 
 </html>

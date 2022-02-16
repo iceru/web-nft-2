@@ -20,11 +20,11 @@
     }
 
     .hero-content {
-        min-height: 90vh;
+        min-height: 95vh;
         display: flex;
         justify-content: end;
         align-items: flex-end;
-        padding: 4rem 0;
+        padding: 6rem 0;
         
         .title {
             text-align: center;
@@ -160,6 +160,39 @@
             width: 80%;
         }
     }
+    
+    .img-wrapper {
+        border: 6px solid #6d4a2a;
+        box-shadow: 12px 12px 0 0 #f76b0c;
+    }
+
+    .woody {
+        img {
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .hulk {
+        height: 100%;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .love-text {
+        padding: 1rem;
+        margin-top: 1.25rem;
+        color: white;
+        background-color: $primary;
+        border: 6px solid #6d4a2a;
+        font-family: 'Hey Haters', sans-serif;
+        font-weight: 600;
+        box-shadow: 12px 12px 0 0 #f76b0c;
+        font-size: 1.25rem;
+    }
 
     @include breakpoint(mobileonly) {
         .title {
@@ -196,6 +229,7 @@
     background-size: cover;
     background-position: bottom;
     padding: 6rem 0;
+    overflow-x: hidden;
 
     .rare-text {
         padding-right: 8rem;
@@ -224,12 +258,22 @@
         background-color: rgba($color: #000000, $alpha: 0.3);
     }
 
+    .rare-1 {
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     .rare-3 {
-        width: 63.666667%;
+        width: 64%;
     }
 
     .rare-4 {
-        width: 35.333333%;
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     @include breakpoint(mobileonly) {
@@ -379,6 +423,7 @@
     .socials {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-top: 2rem;
 
         .item {

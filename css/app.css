@@ -69,7 +69,7 @@
 }
 
 .hero .hero-content {
-  min-height: 90vh;
+  min-height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +79,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
 
 .hero .hero-content .title {
@@ -216,6 +216,43 @@
   width: 80%;
 }
 
+.love .img-wrapper {
+  border: 6px solid #6d4a2a;
+  -webkit-box-shadow: 12px 12px 0 0 #f76b0c;
+          box-shadow: 12px 12px 0 0 #f76b0c;
+}
+
+.love .woody img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.love .hulk {
+  height: 100%;
+}
+
+.love .hulk img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.love .love-text {
+  padding: 1rem;
+  margin-top: 1.25rem;
+  color: white;
+  background-color: #2081e2;
+  border: 6px solid #6d4a2a;
+  font-family: 'Hey Haters', sans-serif;
+  font-weight: 600;
+  -webkit-box-shadow: 12px 12px 0 0 #f76b0c;
+          box-shadow: 12px 12px 0 0 #f76b0c;
+  font-size: 1.25rem;
+}
+
 @media (max-width: 37.5em) {
   .love .title img {
     width: 100%;
@@ -248,6 +285,7 @@
   background-size: cover;
   background-position: bottom;
   padding: 6rem 0;
+  overflow-x: hidden;
 }
 
 .rare .rare-text {
@@ -278,12 +316,20 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.rare .rare-3 {
-  width: 63.666667%;
+.rare .rare-1 img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.rare .rare-4 {
-  width: 35.333333%;
+.rare .rare-3 {
+  width: 64%;
+}
+
+.rare .rare-4 img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 37.5em) {
@@ -446,6 +492,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 2rem;
 }
 
